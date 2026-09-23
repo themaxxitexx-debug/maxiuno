@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,28 +12,55 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 24px;
+            padding: 24px;
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
             color: #222;
         }
 
-        h1 {
-            margin: 0;
+        .perfil {
+            width: min(100%, 600px);
+            padding: 24px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
         }
 
         img {
             display: block;
-            width: min(90vw, 600px);
-            height: auto;
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 20px;
             border: 4px solid #fff;
-            border-radius: 10px;
+            border-radius: 50%;
+            object-fit: cover;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            margin: 0 0 12px;
+        }
+
+        p {
+            margin: 8px 0;
+            line-height: 1.5;
+        }
+
+        .contacto {
+            margin-top: 18px;
+            font-weight: bold;
+            color: #155e75;
         }
     </style>
 </head>
 <body>
-    <h1>Hola maxi</h1>
-    <img src="descarga.jpg" alt="Imagen de Maxii">
+    <main class="perfil">
+        <img src="https://scontent.fnqn1-2.fna.fbcdn.net/v/t39.30808-1/788758684_27970716445911793_7386123837092586683_n.jpg?stp=dst-jpg_tt6&cstp=mx1170x1170&ctp=s200x200&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=vUQiRKymvdcQ7kNvwF7pmtv&_nc_oc=Adpn8h-xLS5dmivgAyxUBy4DVHEXcfZV9S4HpRtCbyHaWEcyvIyvzJ1QGgSzYUsn6bc&_nc_zt=24&_nc_ht=scontent.fnqn1-2.fna&_nc_gid=g7VO2HSo3sVDgW3oKCU8_A&_nc_ss=7b2a8&oh=00_AQJu6sVFUc00ecFQjMeTv1mz_kLH5fejgm6W3PKb5A3Iag&oe=6ABA1061" alt="Foto de perfil de Maxi">
+        <h1>Maxi</h1>
+        <p>Futuro técnico de IoT</p>
+        <p>Vivo en Luis Beltrán, Río Negro.</p>
+        <p class="contacto">Contacto: +54 9 2934 555-018</p>
+    </main>
 </body>
 </html>
